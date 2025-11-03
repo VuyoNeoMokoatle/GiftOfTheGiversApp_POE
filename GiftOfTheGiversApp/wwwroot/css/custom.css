@@ -1,0 +1,95 @@
+﻿/* Navbar Glass Effect */
+.glass-navbar {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* Footer Glass Effect */
+.glass-footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    backdrop-filter: blur(8px);
+    border-top: 2px solid #ffcc00;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+}
+
+    .navbar .nav-link:hover {
+        color: #ffcc00 !important;
+    }
+
+/* Buttons inside navbar */
+.navbar .btn {
+    font-weight: bold;
+}
+
+/* Body gradient background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+/* Hero Section */
+.hero-section {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+}
+
+    .hero-section .btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .hero-section .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+/* About Us Section */
+.about-section {
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    border-radius: 15px;
+    padding: 50px 20px;
+}
+
+    .about-section h2 {
+        color: #ffcc00;
+    }
+
+    .about-section p {
+        color: #f0f0f0;
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+/* Privacy Section */
+.privacy-section {
+    background: linear-gradient(135deg, #212529, #2c3e50);
+    border-radius: 15px;
+    padding: 50px 20px;
+}
+
+    .privacy-section h1,
+    .privacy-section h3 {
+        color: #ffcc00;
+    }
+
+    .privacy-section p {
+        color: #f0f0f0;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+

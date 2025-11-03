@@ -1,0 +1,35 @@
+﻿@page
+@model GiftOfTheGiversApp.Areas.Identity.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Welcome Back</h2>
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="mb-3">
+                <input asp-for="Input.Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="Input.Password" type="password" class="form-control" placeholder="Password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label asp-for="Input.RememberMe" class="form-check-label">Remember Me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+
+            <p class="text-center mt-3">
+                Don’t have an account? <a asp-page="./Register">Register</a>
+            </p>
+        </form>
+    </div>
+</div>

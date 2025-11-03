@@ -1,0 +1,30 @@
+﻿@model IEnumerable<GiftOfTheGiversApp.Models.ContactMessage>
+
+@{
+    ViewData["Title"] = "Contact Messages";
+}
+
+<h2>Contact Messages</h2>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Sent At</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var msg in Model)
+        {
+            <tr>
+                <td>@msg.Name</td>
+                <td>@msg.Email</td>
+                <td>@msg.Message</td>
+                <td>@msg.SentAt.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
